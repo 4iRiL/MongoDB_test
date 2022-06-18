@@ -1,0 +1,20 @@
+<form action="/" method="post" class="form_get">
+    <input type="text" name="prod_name" placeholder="prod_name" value={{find_name}}>
+    <input type="submit" value="submit" name="submit">
+</form>
+
+<h3>sorting by ver</h3>
+{{#if isAns}}
+    {{#with ans}}
+        <span> {{_id}}</span><br>
+        <span> {{title}}</span><br>
+        <span> {{price}}</span><br>
+        <span> {{date}}</span><br>
+        <span> {{version}}</span><br>
+        {{#if cat1}} <span> {{cat1}}</span><br> {{/if}}
+        {{#if cat2}} <span> {{cat2}}</span><br> {{/if}}
+        {{#if cat3}} <span> {{cat3}}</span><br> {{/if}}
+        {{#if cat4}} <span> {{cat4}}</span><br> {{/if}}
+
+    {{/with}}
+{{/if}}

@@ -1,0 +1,66 @@
+<form method="post">
+
+<input type="submit" value="cat1" name="showCat1">
+
+{{#if showCat1}}
+    <h3>Zaebis</h3>
+    {{#each ansCat1}}
+        <span>id: <b>{{_id}}</b></span><br>
+        <span>name: <b>{{title}}</b></span><br>
+        <span>price: <b>{{price}}</b></span><br>
+        <span>ver: <b>{{version}}</b></span><br>
+        <br>
+    {{/each}}
+
+{{/if}}
+
+<input type="submit" value="cat2" name="showCat2">
+
+
+{{#if showCat2}}
+    <h3>Zaebis</h3>
+        {{#each ansCat2}}
+            <span>id: <b>{{_id}}</b></span><br>
+            <span>name: <b>{{title}}</b></span><br>
+            <span>price: <b>{{price}}</b></span><br>
+            <span>ver: <b>{{version}}</b></span><br>
+            <br>
+        {{/each}}
+{{/if}}
+
+<input type="submit" value="cat3" name="showCat3">
+
+
+{{#if showCat3}}
+    <h3>Zaebis</h3>
+    {{#each ansCat3}}
+        <span>id: <b>{{_id}}</b></span><br>
+        <span>name: <b>{{title}}</b></span><br>
+        <span>price: <b>{{price}}</b></span><br>
+        <span>ver: <b>{{version}}</b></span><br>
+        <br>
+    {{/each}}
+{{/if}}
+
+<input type="submit" value="cat4" name="showCat4">
+
+
+{{#if showCat4}}
+    <h3>Zaebis</h3>
+        {{#each ansCat4}}
+            <span>id: <b>{{_id}}</b></span><br>
+            <span>name: <b>{{title}}</b></span><br>
+            <span>price: <b>{{price}}</b></span><br>
+            <span>ver: <b>{{version}}</b></span><br>
+            <br>
+        {{/each}}
+{{/if}}
+
+<input type="submit" value="avgPrice" name="avgPrice">
+
+{{#if showAvgPrice}}
+<h3>Zaebis</h3>
+    {{ansAvgPrice}}
+{{/if}}
+
+</form>

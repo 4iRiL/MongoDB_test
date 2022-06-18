@@ -1,0 +1,28 @@
+<form method="post" class="form_add" id="form_add">
+    <div id="inputs">   
+        <input type="text" placeholder="Name" name="title" value="someTitle">
+        <input type="text" placeholder="price" name="price">
+        <input type="text" placeholder="version" name="ver">
+        <input type="text" placeholder="cat1" name="cat1">
+    </div>
+    <input type="submit" value="submit">
+    <input type="button" onclick="newCat()" value="Add category">
+</form>
+
+<script>
+let lastCat = 1
+let maxCat = 4
+function newCat() {
+
+    if (lastCat == maxCat) {
+        alert('Максимальное кол-во категорий 4!!!')
+    } else {
+        lastCat++
+        jQuery('<input>',{
+            'type' : 'text',
+            'placeholder': 'cat' + lastCat,
+            'name': 'cat' + lastCat,
+        }).appendTo('#inputs')
+    }
+}    
+</script>
